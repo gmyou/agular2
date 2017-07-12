@@ -40,43 +40,57 @@
         <h1>About</h1>
       </div>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2">
           <img src="./assets/face.png" class="img-rounded" alt="유근명">
         </div>
-        <div class="col-md-9">
+        <div class="col-md-5">
           <table class="table">
-              <tr>
-                <th>이름</th>
-                <td>유근명</td>
-                <th>생년월일 (나이)</th>
-                <td>'71.2.7 ({{ info.age }}세)</td>
-              </tr>
-              <tr>
-                <th>휴대전화</th>
-                <td>{{ info.mobile }}</td>
-                <th>이메일</th>
-                <td>{{ info.email }}</td>
-              </tr>
-              <tr>
-                <th>홈페이지</th>
-                <td><a href="{{ info.homepage }}">{{ info.homepage }}</a></td>
-                <th>주소</th>
-                <td>{{ info.address }}</td>
-              </tr>
-              <tr>
-                <th>학력</th>
-                <td>초대졸</td>
-                <th>경력</th>
-                <td>17년</td>
-              </tr>
-              <tr>
-                <th>희망연봉</th>
-                <td>6,000이나 협의 가능</td>
-                <th>고용형태</th>
-                <td>정규직이나 협의 가능</td>
-              </tr>
+            <tr>
+              <th>이름</th>
+              <td>유근명</td>
+            </tr>
+            <tr>
+              <th>휴대전화</th>
+              <td>{{ info.mobile }}</td>
+            </tr>
+            <tr>
+              <th>홈페이지</th>
+              <td><a href="{{ info.homepage }}">{{ info.homepage }}</a></td>
+            </tr>
+            <tr>
+              <th>학력</th>
+              <td>초대졸</td>
+            </tr>
+            <tr>
+              <th>희망연봉</th>
+              <td>6,000이나 협의 가능</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-5">
+          <table class="table">
+            <tr>
+              <th>생년월일 (나이)</th>
+              <td>'71.2.7 ({{ info.age }}세)</td>
+            </tr>
+            <tr>
+              <th>이메일</th>
+              <td>{{ info.email }}</td>
+            </tr>
+            <tr>
+              <th>주소</th>
+              <td>{{ info.address }}</td>
+            </tr>
+            <tr>
+              <th>경력</th>
+              <td>17년</td>
+            </tr>
+            <tr>
+              <th>고용형태</th>
+              <td>정규직이나 협의 가능</td>
+            </tr>
           </table>
         </div>
       </div>
-      
+
     </div>
