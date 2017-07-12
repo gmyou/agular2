@@ -1,3 +1,82 @@
-<h1>
-  {{title}}
-</h1>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">유근명</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#career">Career</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Skill <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Spec</a></li>
+                <li><a href="#">Portfolio</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron" id="home">
+        <h1>Developer</h1>
+        <p>다양한 언어와 스킬을 가진 책임감 있는 성실한 프로그래머, 서버 셋팅에서 구현까지!</p>
+      </div>
+
+      <div class="page-header" id="about">
+        <h1>About</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="./assets/face.png" class="img-rounded" alt="유근명">
+        </div>
+        <div class="col-md-9">
+          <table class="table">
+              <tr>
+                <th>이름</th>
+                <td>유근명</td>
+                <th>생년월일 (나이)</th>
+                <td>'71.2.7 ({{ info.age }}세)</td>
+              </tr>
+              <tr>
+                <th>휴대전화</th>
+                <td>{{ info.mobile }}</td>
+                <th>이메일</th>
+                <td>{{ info.email }}</td>
+              </tr>
+              <tr>
+                <th>홈페이지</th>
+                <td><a href="{{ info.homepage }}">{{ info.homepage }}</a></td>
+                <th>주소</th>
+                <td>{{ info.address }}</td>
+              </tr>
+              <tr>
+                <th>학력</th>
+                <td>초대졸</td>
+                <th>경력</th>
+                <td>17년</td>
+              </tr>
+              <tr>
+                <th>희망연봉</th>
+                <td>6,000이나 협의 가능</td>
+                <th>고용형태</th>
+                <td>정규직이나 협의 가능</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+      
+    </div>
